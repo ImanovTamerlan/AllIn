@@ -24,24 +24,10 @@ protocol CustomNavigationBar {
     var backButtonType: BackButtonType { get set }
 }
 
-extension CustomNavigationBar {
-    var navigationType: NavigationBarType {
-        get {
-            return .visible
-        }
-        set {}
-    }
-    
-    var backButtonType: BackButtonType {
-        get {
-            return .hidden
-        }
-        set {}
-    }
-}
-
 class BaseViewController: UIViewController, CustomNavigationBar {
-
+    var navigationType: NavigationBarType = .visible
+    var backButtonType: BackButtonType = .hidden
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -49,6 +35,7 @@ class BaseViewController: UIViewController, CustomNavigationBar {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         configureBackButton()
+        configureNavigationBar()
     }
     
     

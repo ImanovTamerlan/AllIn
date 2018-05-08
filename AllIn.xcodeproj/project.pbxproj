@@ -19,6 +19,16 @@
 		4ED4D00220A1C553009AABDE /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED4D00120A1C553009AABDE /* ResetPasswordViewController.swift */; };
 		4ED4D00520A1C5D9009AABDE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED4D00420A1C5D9009AABDE /* BaseViewController.swift */; };
 		4ED4D00720A1D175009AABDE /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED4D00620A1D175009AABDE /* UIExtension.swift */; };
+		4ED4D00B20A1D919009AABDE /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED4D00A20A1D919009AABDE /* CustomButton.swift */; };
+		4ED4D00F20A1E1E5009AABDE /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED4D00E20A1E1E5009AABDE /* CustomView.swift */; };
+		4ED4D01020A1F573009AABDE /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4ED4CFF620A1C338009AABDE /* SF-Pro-Display-Medium.otf */; };
+		4ED4D01120A1F573009AABDE /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4ED4CFF520A1C324009AABDE /* SF-Pro-Display-Bold.otf */; };
+		4ED4D01220A1F573009AABDE /* SF-Pro-Display-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4ED4CFF720A1C33E009AABDE /* SF-Pro-Display-Light.otf */; };
+		4ED4D01320A1F573009AABDE /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4ED4CFF820A1C34C009AABDE /* SF-Pro-Display-Semibold.otf */; };
+		4ED4D01420A1F573009AABDE /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4ED4CFF420A1C309009AABDE /* SF-Pro-Display-Regular.otf */; };
+		4ED4D01520A1F573009AABDE /* SFProText-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4ED4CFF920A1C35E009AABDE /* SFProText-Light.ttf */; };
+		4ED4D01720A1F803009AABDE /* DeviceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED4D01620A1F803009AABDE /* DeviceExtensions.swift */; };
+		4ED4D01920A1F8B7009AABDE /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED4D01820A1F8B7009AABDE /* CustomLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +53,10 @@
 		4ED4D00120A1C553009AABDE /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		4ED4D00420A1C5D9009AABDE /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		4ED4D00620A1D175009AABDE /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
+		4ED4D00A20A1D919009AABDE /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		4ED4D00E20A1E1E5009AABDE /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		4ED4D01620A1F803009AABDE /* DeviceExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceExtensions.swift; sourceTree = "<group>"; };
+		4ED4D01820A1F8B7009AABDE /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		724BEF1A451BBD68079CF040 /* Pods-AllIn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AllIn.release.xcconfig"; path = "Pods/Target Support Files/Pods-AllIn/Pods-AllIn.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,6 +113,7 @@
 				4E4EAAA620A1B86E00FEE9C3 /* AppDelegate.swift */,
 				4E4EAAAA20A1B86E00FEE9C3 /* Main.storyboard */,
 				4E4EAAA820A1B86E00FEE9C3 /* ViewController.swift */,
+				4ED4D00820A1D8D8009AABDE /* Custom */,
 				4ED4CFFA20A1C4DD009AABDE /* Auth */,
 				4ED4D00320A1C59C009AABDE /* Common */,
 				4ED4CFF220A1C205009AABDE /* Supporting Files */,
@@ -145,9 +160,20 @@
 			isa = PBXGroup;
 			children = (
 				4ED4D00420A1C5D9009AABDE /* BaseViewController.swift */,
+				4ED4D01620A1F803009AABDE /* DeviceExtensions.swift */,
 				4ED4D00620A1D175009AABDE /* UIExtension.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		4ED4D00820A1D8D8009AABDE /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				4ED4D00A20A1D919009AABDE /* CustomButton.swift */,
+				4ED4D01820A1F8B7009AABDE /* CustomLabel.swift */,
+				4ED4D00E20A1E1E5009AABDE /* CustomView.swift */,
+			);
+			path = Custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +237,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ED4D01020A1F573009AABDE /* SF-Pro-Display-Medium.otf in Resources */,
+				4ED4D01120A1F573009AABDE /* SF-Pro-Display-Bold.otf in Resources */,
+				4ED4D01220A1F573009AABDE /* SF-Pro-Display-Light.otf in Resources */,
+				4ED4D01320A1F573009AABDE /* SF-Pro-Display-Semibold.otf in Resources */,
+				4ED4D01420A1F573009AABDE /* SF-Pro-Display-Regular.otf in Resources */,
+				4ED4D01520A1F573009AABDE /* SFProText-Light.ttf in Resources */,
 				4ED4CFFC20A1C4EC009AABDE /* Auth.storyboard in Resources */,
 				4E4EAAB120A1B86F00FEE9C3 /* LaunchScreen.storyboard in Resources */,
 				4E4EAAAE20A1B86F00FEE9C3 /* Assets.xcassets in Resources */,
@@ -283,8 +315,12 @@
 			files = (
 				4ED4D00020A1C545009AABDE /* SignInViewController.swift in Sources */,
 				4E4EAAA920A1B86E00FEE9C3 /* ViewController.swift in Sources */,
+				4ED4D01920A1F8B7009AABDE /* CustomLabel.swift in Sources */,
 				4ED4D00220A1C553009AABDE /* ResetPasswordViewController.swift in Sources */,
+				4ED4D00F20A1E1E5009AABDE /* CustomView.swift in Sources */,
 				4ED4D00720A1D175009AABDE /* UIExtension.swift in Sources */,
+				4ED4D01720A1F803009AABDE /* DeviceExtensions.swift in Sources */,
+				4ED4D00B20A1D919009AABDE /* CustomButton.swift in Sources */,
 				4ED4CFFE20A1C51E009AABDE /* StartingViewController.swift in Sources */,
 				4E4EAAA720A1B86E00FEE9C3 /* AppDelegate.swift in Sources */,
 				4ED4D00520A1C5D9009AABDE /* BaseViewController.swift in Sources */,
@@ -433,14 +469,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Y45QPM252N;
-				INFOPLIST_FILE = AllIn/Info.plist;
+				DEVELOPMENT_TEAM = 627S52R59N;
+				INFOPLIST_FILE = "$(SRCROOT)/AllIn/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = MS.AllIn1;
+				PRODUCT_BUNDLE_IDENTIFIER = MS.AllIn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -453,14 +489,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Y45QPM252N;
-				INFOPLIST_FILE = AllIn/Info.plist;
+				DEVELOPMENT_TEAM = 627S52R59N;
+				INFOPLIST_FILE = "$(SRCROOT)/AllIn/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = MS.AllIn1;
+				PRODUCT_BUNDLE_IDENTIFIER = MS.AllIn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
