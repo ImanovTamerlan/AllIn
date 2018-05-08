@@ -18,9 +18,7 @@ class CustomButton: UIButton {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        if DeviceType.IS_IPHONE_5 {
-            self.titleLabel?.font = self.titleLabel?.font.withSize((self.titleLabel?.font.pointSize ?? 0)-2)
-        }
+        self.titleLabel?.font = self.titleLabel?.font?.withScale()
     }
 
 }

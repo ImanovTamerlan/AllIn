@@ -12,9 +12,7 @@ class CustomLabel: UILabel {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        if DeviceType.IS_IPHONE_5 {
-            self.font = self.font.withSize(self.font.pointSize-2)
-        }
+        self.font = self.font.withScale()
     }
 
 }
