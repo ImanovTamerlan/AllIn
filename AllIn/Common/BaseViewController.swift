@@ -64,6 +64,12 @@ extension BaseViewController {
             self.navigationController?.navigationBar.isHidden = false
         case .visible:
             self.navigationController?.navigationBar.isHidden = false
+            self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 1, green: 0.3921568627, blue: 0.4039215686, alpha: 1)
+            self.navigationController?.navigationBar.tintColor = .white
+            self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.black]
+            self.navigationController?.navigationBar.backgroundColor = #colorLiteral(red: 1, green: 0.3921568627, blue: 0.4039215686, alpha: 1)
+            self.navigationController?.navigationBar.shadowImage = UIImage()
+            self.navigationController?.navigationBar.isTranslucent = false
         }
     }
 }

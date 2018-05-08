@@ -39,3 +39,27 @@ extension UIStoryboard {
     
 }
 
+extension UIFont {
+    class func systemFontWithScale(fontSize size: CGFloat, weight: CGFloat = UIFont.Weight.regular.rawValue) -> UIFont {
+        let scale = getFontScaleForDevice()
+        return UIFont.systemFont(ofSize: size * scale, weight: UIFont.Weight(rawValue: weight))
+    }
+    
+    func withScaleSize(fontSize size: CGFloat) -> UIFont {
+        let scale = UIFont.getFontScaleForDevice()
+        return self.withSize(size * scale)
+    }
+    
+    func withScale() -> UIFont {
+        let scale = UIFont.getFontScaleForDevice()
+        return self.withSize(self.pointSize * scale)
+    }
+    
+    fileprivate class func getFontScaleForDevice() -> CGFloat {
+        var sizeScale = CGFloat(1.0)
+        if DeviceType.IS_IPHONE_5 {
+            sizeScale = 0.882352941
+        }
+        return sizeScale
+    }
+}

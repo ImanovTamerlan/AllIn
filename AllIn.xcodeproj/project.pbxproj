@@ -29,6 +29,7 @@
 		4ED4D01520A1F573009AABDE /* SFProText-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4ED4CFF920A1C35E009AABDE /* SFProText-Light.ttf */; };
 		4ED4D01720A1F803009AABDE /* DeviceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED4D01620A1F803009AABDE /* DeviceExtensions.swift */; };
 		4ED4D01920A1F8B7009AABDE /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED4D01820A1F8B7009AABDE /* CustomLabel.swift */; };
+		4ED4D01B20A20B1A009AABDE /* FloatLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED4D01A20A20B1A009AABDE /* FloatLabelTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,8 @@
 		4ED4D00E20A1E1E5009AABDE /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		4ED4D01620A1F803009AABDE /* DeviceExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceExtensions.swift; sourceTree = "<group>"; };
 		4ED4D01820A1F8B7009AABDE /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		4ED4D01A20A20B1A009AABDE /* FloatLabelTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatLabelTextField.swift; sourceTree = "<group>"; };
+		4ED4D01C20A20F4A009AABDE /* SFProText-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Regular.ttf"; sourceTree = "<group>"; };
 		724BEF1A451BBD68079CF040 /* Pods-AllIn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AllIn.release.xcconfig"; path = "Pods/Target Support Files/Pods-AllIn/Pods-AllIn.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,6 +140,7 @@
 			children = (
 				4ED4CFF620A1C338009AABDE /* SF-Pro-Display-Medium.otf */,
 				4ED4CFF520A1C324009AABDE /* SF-Pro-Display-Bold.otf */,
+				4ED4D01C20A20F4A009AABDE /* SFProText-Regular.ttf */,
 				4ED4CFF720A1C33E009AABDE /* SF-Pro-Display-Light.otf */,
 				4ED4CFF820A1C34C009AABDE /* SF-Pro-Display-Semibold.otf */,
 				4ED4CFF420A1C309009AABDE /* SF-Pro-Display-Regular.otf */,
@@ -172,6 +176,7 @@
 				4ED4D00A20A1D919009AABDE /* CustomButton.swift */,
 				4ED4D01820A1F8B7009AABDE /* CustomLabel.swift */,
 				4ED4D00E20A1E1E5009AABDE /* CustomView.swift */,
+				4ED4D01A20A20B1A009AABDE /* FloatLabelTextField.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -316,6 +321,7 @@
 				4ED4D00020A1C545009AABDE /* SignInViewController.swift in Sources */,
 				4E4EAAA920A1B86E00FEE9C3 /* ViewController.swift in Sources */,
 				4ED4D01920A1F8B7009AABDE /* CustomLabel.swift in Sources */,
+				4ED4D01B20A20B1A009AABDE /* FloatLabelTextField.swift in Sources */,
 				4ED4D00220A1C553009AABDE /* ResetPasswordViewController.swift in Sources */,
 				4ED4D00F20A1E1E5009AABDE /* CustomView.swift in Sources */,
 				4ED4D00720A1D175009AABDE /* UIExtension.swift in Sources */,
