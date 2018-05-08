@@ -1,3 +1,15 @@
-PODFILE CHECKSUM: bd3d6086eb1a0ad41bb379a6e3cd300a0c663fcb
+PODS:
+  - IQKeyboardManagerSwift (5.0.7)
+  - SkyFloatingLabelTextField (3.4.0)
+
+DEPENDENCIES:
+  - IQKeyboardManagerSwift
+  - SkyFloatingLabelTextField
+
+SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: 30fb3a61de1af53a95e02b80fb54ed0a19d5ede5
+  SkyFloatingLabelTextField: 703aa1420b697392b1e7dba25571180dde018477
+
+PODFILE CHECKSUM: abca87f43ea49abf2be30de63115ac9f4567363f
 
 COCOAPODS: 1.4.0

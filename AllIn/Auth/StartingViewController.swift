@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  StartingViewController.swift
 //  AllIn
 //
 //  Created by Tamerlan Imanov on 08.05.2018.
@@ -8,18 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class StartingViewController: BaseViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationType = .hidden
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
 }
-
