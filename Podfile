@@ -4,4 +4,5 @@
 target 'AllIn' do
   use_frameworks!
   pod 'Alamofire'
+  pod 'IQKeyboardManagerSwift'
 end
