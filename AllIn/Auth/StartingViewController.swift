@@ -9,10 +9,10 @@
 import UIKit
 
 class StartingViewController: BaseViewController {
-    var navigationType: NavigationBarType = .hidden
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationType = .hidden
     }
 
     override func didReceiveMemoryWarning() {

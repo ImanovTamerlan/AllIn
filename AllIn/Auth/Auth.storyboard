@@ -1,21 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M7o-90-bf5">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Bold.otf">
+            <string>SFProDisplay-Bold</string>
+        </array>
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="ro0-Q6-bgz">
             <objects>
                 <navigationController id="M7o-90-bf5" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WaD-M0-Cmb">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -31,16 +41,297 @@
             <objects>
                 <viewController storyboardIdentifier="StartingViewController" id="XXa-2f-FJ1" customClass="StartingViewController" customModule="AllIn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aAA-12-SuH">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="biE-Zu-s2c">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="542"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.31" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="auth_background" translatesAutoresizingMaskIntoConstraints="NO" id="AIJ-K3-okC">
+                                        <rect key="frame" x="20" y="45" width="374" height="340"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="AIJ-K3-okC" secondAttribute="height" multiplier="11:10" id="tBH-X1-n9U"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elT-qq-6yN" customClass="CustomButton" customModule="AllIn" customModuleProvider="target">
+                                        <rect key="frame" x="152.33333333333334" y="497" width="110.00000000000003" height="29"/>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
+                                        <state key="normal" title="Забыли пароль?">
+                                            <color key="titleColor" red="0.73333333333333328" green="0.73333333333333328" blue="0.73333333333333328" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Pj-Qg-bJt" customClass="CustomButton" customModule="AllIn" customModuleProvider="target">
+                                        <rect key="frame" x="45" y="433" width="324" height="48"/>
+                                        <color key="backgroundColor" red="1" green="0.3921568627" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="h2I-gB-1xD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
+                                        <state key="normal" title="Войти">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="24"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KW1-qc-tmR" customClass="CustomButton" customModule="AllIn" customModuleProvider="target">
+                                        <rect key="frame" x="45" y="369" width="324" height="48"/>
+                                        <color key="backgroundColor" red="0.31372549019607843" green="0.50196078431372548" blue="0.72549019607843135" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="y3X-ce-G4N"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
+                                        <state key="normal" title="Продолжить через Вконтакте">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="24"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GU5-uo-EqW" customClass="CustomButton" customModule="AllIn" customModuleProvider="target">
+                                        <rect key="frame" x="45" y="305" width="324" height="48"/>
+                                        <color key="backgroundColor" red="0.25882352941176467" green="0.40392156862745099" blue="0.69411764705882351" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="suH-S9-A2L"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
+                                        <state key="normal" title="Продолжить через Faceboook">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="24"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cl-oG-ECq" customClass="CustomLabel" customModule="AllIn" customModuleProvider="target">
+                                        <rect key="frame" x="106.99999999999999" y="252" width="200.66666666666663" height="43"/>
+                                        <string key="text">Покупайте и продавайте 
+вместе с нами</string>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="18"/>
+                                        <color key="textColor" red="0.73333333333333328" green="0.73333333333333328" blue="0.73333333333333328" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" image="auth_logo" translatesAutoresizingMaskIntoConstraints="NO" id="0GJ-Bq-KGO">
+                                        <rect key="frame" x="104.66666666666669" y="142" width="205" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="0GJ-Bq-KGO" secondAttribute="height" multiplier="41:16" id="TkY-zz-roX"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="499-Hh-Mtc" customClass="CustomView" customModule="AllIn" customModuleProvider="target">
+                                        <rect key="frame" x="197.33333333333334" y="238" width="20" height="2"/>
+                                        <color key="backgroundColor" red="1" green="0.3921568627" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="A9Y-LQ-fPH"/>
+                                            <constraint firstAttribute="height" constant="2" id="JFa-J3-jAc"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="8cl-oG-ECq" firstAttribute="top" secondItem="0GJ-Bq-KGO" secondAttribute="bottom" constant="30" id="0aR-lQ-HVZ"/>
+                                    <constraint firstItem="AIJ-K3-okC" firstAttribute="leading" secondItem="biE-Zu-s2c" secondAttribute="leading" constant="20" id="2uR-h5-VwX"/>
+                                    <constraint firstItem="KW1-qc-tmR" firstAttribute="leading" secondItem="biE-Zu-s2c" secondAttribute="leading" constant="45" id="48t-rb-IMV"/>
+                                    <constraint firstItem="elT-qq-6yN" firstAttribute="top" secondItem="4Pj-Qg-bJt" secondAttribute="bottom" constant="16" id="BV3-KH-agd"/>
+                                    <constraint firstItem="GU5-uo-EqW" firstAttribute="top" secondItem="8cl-oG-ECq" secondAttribute="bottom" constant="10" id="D0c-IL-pJs"/>
+                                    <constraint firstAttribute="trailing" secondItem="GU5-uo-EqW" secondAttribute="trailing" constant="45" id="E5E-EH-eP3"/>
+                                    <constraint firstItem="8cl-oG-ECq" firstAttribute="top" secondItem="499-Hh-Mtc" secondAttribute="bottom" constant="12" id="ID5-2L-L9e"/>
+                                    <constraint firstItem="0GJ-Bq-KGO" firstAttribute="width" secondItem="biE-Zu-s2c" secondAttribute="width" multiplier="205/414" id="KNl-hw-gFN"/>
+                                    <constraint firstItem="GU5-uo-EqW" firstAttribute="leading" secondItem="biE-Zu-s2c" secondAttribute="leading" constant="45" id="LUs-lt-d4e"/>
+                                    <constraint firstItem="0GJ-Bq-KGO" firstAttribute="top" relation="greaterThanOrEqual" secondItem="biE-Zu-s2c" secondAttribute="top" constant="50" id="QKb-0P-VKj"/>
+                                    <constraint firstAttribute="trailing" secondItem="AIJ-K3-okC" secondAttribute="trailing" constant="20" id="QgX-ph-xUN"/>
+                                    <constraint firstAttribute="trailing" secondItem="KW1-qc-tmR" secondAttribute="trailing" constant="45" id="R87-Bu-FBz"/>
+                                    <constraint firstItem="0GJ-Bq-KGO" firstAttribute="centerX" secondItem="biE-Zu-s2c" secondAttribute="centerX" id="T5v-ta-eMc"/>
+                                    <constraint firstItem="4Pj-Qg-bJt" firstAttribute="leading" secondItem="biE-Zu-s2c" secondAttribute="leading" constant="45" id="VUE-NU-LwV"/>
+                                    <constraint firstAttribute="bottom" secondItem="elT-qq-6yN" secondAttribute="bottom" constant="16" id="X97-KL-oJM"/>
+                                    <constraint firstItem="499-Hh-Mtc" firstAttribute="centerX" secondItem="biE-Zu-s2c" secondAttribute="centerX" id="Xxd-Ra-gLz"/>
+                                    <constraint firstItem="8cl-oG-ECq" firstAttribute="centerX" secondItem="biE-Zu-s2c" secondAttribute="centerX" id="dPC-oZ-kE6"/>
+                                    <constraint firstAttribute="trailing" secondItem="4Pj-Qg-bJt" secondAttribute="trailing" constant="45" id="lwu-CD-Xe6"/>
+                                    <constraint firstItem="4Pj-Qg-bJt" firstAttribute="top" secondItem="KW1-qc-tmR" secondAttribute="bottom" constant="16" id="mT8-Ow-pHm"/>
+                                    <constraint firstItem="GU5-uo-EqW" firstAttribute="top" relation="lessThanOrEqual" secondItem="8cl-oG-ECq" secondAttribute="bottom" priority="999" constant="30" id="mrZ-Yq-ANi"/>
+                                    <constraint firstItem="elT-qq-6yN" firstAttribute="centerX" secondItem="biE-Zu-s2c" secondAttribute="centerX" id="phK-Oj-VMe"/>
+                                    <constraint firstItem="KW1-qc-tmR" firstAttribute="top" secondItem="GU5-uo-EqW" secondAttribute="bottom" constant="16" id="v2b-rQ-6Qv"/>
+                                    <constraint firstItem="AIJ-K3-okC" firstAttribute="top" secondItem="biE-Zu-s2c" secondAttribute="top" constant="45" id="z0C-2e-l36"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="typ-F9-n5u">
+                                <rect key="frame" x="0.0" y="542" width="414" height="194"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G7g-N7-3tH" customClass="CustomButton" customModule="AllIn" customModuleProvider="target">
+                                        <rect key="frame" x="166.33333333333334" y="16" width="83" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="72z-ut-NnT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="13"/>
+                                        <state key="normal" title="Нет аккаунта?">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zNO-tE-FC2" customClass="CustomButton" customModule="AllIn" customModuleProvider="target">
+                                        <rect key="frame" x="114.33333333333331" y="150" width="186" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="VQU-WP-1Bt"/>
+                                        </constraints>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Регистрируясь вы соглашаетесь ">
+                                                    <attributes>
+                                                        <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <font key="NSFont" size="13" name="SFProDisplay-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                            <tabStops>
+                                                                <textTab alignment="left" location="28">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="56">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="84">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="112">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="140">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="168">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="196">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="224">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="252">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="280">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="308">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="336">
+                                                                    <options/>
+                                                                </textTab>
+                                                            </tabStops>
+                                                        </paragraphStyle>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="с правилами нашего сервиса">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.94901999999999997" green="0.36077999999999999" blue="0.38430999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="13" name="SFProDisplay-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                            <tabStops>
+                                                                <textTab alignment="left" location="28">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="56">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="84">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="112">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="140">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="168">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="196">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="224">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="252">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="280">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="308">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="336">
+                                                                    <options/>
+                                                                </textTab>
+                                                            </tabStops>
+                                                        </paragraphStyle>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ShJ-aD-UL3" customClass="CustomButton" customModule="AllIn" customModuleProvider="target">
+                                        <rect key="frame" x="45" y="39" width="324" height="48"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="Zr4-mt-og0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
+                                        <state key="normal" title="Зарегистрироваться">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="24"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95294117647058818" green="0.94901960784313721" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="typ-F9-n5u" secondAttribute="height" multiplier="207:97" id="D2Z-FS-yHl"/>
+                                    <constraint firstItem="ShJ-aD-UL3" firstAttribute="top" secondItem="G7g-N7-3tH" secondAttribute="bottom" constant="8" id="HE9-eT-zMf"/>
+                                    <constraint firstItem="zNO-tE-FC2" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ShJ-aD-UL3" secondAttribute="bottom" constant="15" id="HFq-Tb-0ZI"/>
+                                    <constraint firstItem="G7g-N7-3tH" firstAttribute="centerX" secondItem="typ-F9-n5u" secondAttribute="centerX" id="L6c-v0-P7G"/>
+                                    <constraint firstItem="ShJ-aD-UL3" firstAttribute="leading" secondItem="typ-F9-n5u" secondAttribute="leading" constant="45" id="ZdG-rc-1Q4"/>
+                                    <constraint firstItem="zNO-tE-FC2" firstAttribute="centerX" secondItem="typ-F9-n5u" secondAttribute="centerX" id="hMS-ST-lFP"/>
+                                    <constraint firstAttribute="bottom" secondItem="zNO-tE-FC2" secondAttribute="bottom" constant="14" id="rfQ-as-BGN"/>
+                                    <constraint firstItem="G7g-N7-3tH" firstAttribute="top" secondItem="typ-F9-n5u" secondAttribute="top" constant="16" id="sFK-1q-Dqk"/>
+                                    <constraint firstAttribute="trailing" secondItem="ShJ-aD-UL3" secondAttribute="trailing" constant="45" id="vFC-Q3-QL5"/>
+                                    <constraint firstItem="zNO-tE-FC2" firstAttribute="top" relation="lessThanOrEqual" secondItem="ShJ-aD-UL3" secondAttribute="bottom" priority="999" constant="50" id="ywI-TT-vU6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gaU-aD-aWh" firstAttribute="trailing" secondItem="typ-F9-n5u" secondAttribute="trailing" id="HTp-NQ-azI"/>
+                            <constraint firstItem="biE-Zu-s2c" firstAttribute="leading" secondItem="gaU-aD-aWh" secondAttribute="leading" id="HpZ-a1-EH2"/>
+                            <constraint firstItem="typ-F9-n5u" firstAttribute="leading" secondItem="gaU-aD-aWh" secondAttribute="leading" id="S12-Ye-O3r"/>
+                            <constraint firstItem="biE-Zu-s2c" firstAttribute="top" secondItem="aAA-12-SuH" secondAttribute="top" id="V8Z-F2-MaK"/>
+                            <constraint firstItem="typ-F9-n5u" firstAttribute="top" secondItem="biE-Zu-s2c" secondAttribute="bottom" id="hdq-Sa-CTF"/>
+                            <constraint firstAttribute="bottom" secondItem="typ-F9-n5u" secondAttribute="bottom" id="wTp-Sv-7zY"/>
+                            <constraint firstItem="gaU-aD-aWh" firstAttribute="trailing" secondItem="biE-Zu-s2c" secondAttribute="trailing" id="zeO-2g-b46"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="gaU-aD-aWh"/>
                     </view>
                     <navigationItem key="navigationItem" id="gcE-Kt-2M6"/>
+                    <size key="freeformSize" width="414" height="736"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ta7-F9-CHI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-228" y="-190"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="auth_background" width="372" height="344"/>
+        <image name="auth_logo" width="350" height="137"/>
+    </resources>
 </document>
